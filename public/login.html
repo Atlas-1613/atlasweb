@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Cadastro - Atlas Web</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-b from-neutral-50 to-white flex items-center justify-center min-h-screen">
+
+    <div class="bg-white rounded-xl shadow-lg p-10 w-full max-w-md">
+
+  
+        <h2 id="formTitle" class="text-2xl font-semibold text-center mb-6">Login</h2>
+
+        <form id="loginForm" class="flex flex-col gap-4">
+            <div>
+                <label for="email" class="block text-sm font-medium text-neutral-700 mb-1">Email</label>
+                <input type="email" id="email" placeholder="seu@email.com"
+                    class="w-full border border-neutral-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black"
+                    required>
+            </div>
+
+            <div>
+                <label for="senha" class="block text-sm font-medium text-neutral-700 mb-1">Senha</label>
+                <input type="password" id="senha" placeholder="Sua senha"
+                    class="w-full border border-neutral-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black"
+                    required>
+            </div>
+
+            <button type="submit"
+                class="bg-black text-white py-3 rounded-lg mt-4 hover:opacity-90 transition duration-300">Entrar</button>
+        </form>
+
+        <form id="signupForm" class="flex flex-col gap-4 hidden">
+            <div>
+                <label for="nome" class="block text-sm font-medium text-neutral-700 mb-1">Nome Completo</label>
+                <input type="text" id="nome" placeholder="Seu nome"
+                    class="w-full border border-neutral-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black"
+                    required>
+            </div>
+
+            <div>
+                <label for="emailSignup" class="block text-sm font-medium text-neutral-700 mb-1">Email</label>
+                <input type="email" id="emailSignup" placeholder="seu@email.com"
+                    class="w-full border border-neutral-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black"
+                    required>
+            </div>
+
+            <div>
+                <label for="senhaSignup" class="block text-sm font-medium text-neutral-700 mb-1">Senha</label>
+                <input type="password" id="senhaSignup" placeholder="Sua senha"
+                    class="w-full border border-neutral-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black"
+                    required>
+            </div>
+
+            <div>
+                <label for="confirmSenha" class="block text-sm font-medium text-neutral-700 mb-1">Confirme a
+                    Senha</label>
+                <input type="password" id="confirmSenha" placeholder="Confirme sua senha"
+                    class="w-full border border-neutral-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black"
+                    required>
+            </div>
+
+            <button type="submit"
+                class="bg-black text-white py-3 rounded-lg mt-4 hover:opacity-90 transition duration-300">Cadastrar</button>
+        </form>
+
+        <p class="text-center text-sm text-neutral-500 mt-6">
+            <span id="toggleText">Não tem conta? </span>
+            <button id="toggleBtn" class="text-black font-medium hover:underline">Cadastre-se</button>
+        </p>
+
+        <p class="text-center text-sm text-neutral-400 mt-2">
+            <a href="index.html" class="hover:underline">Voltar para Home</a>
+        </p>
+    </div>
+
+    <script>
+        const loginForm = document.getElementById('loginForm')
+        const signupForm = document.getElementById('signupForm')
+        const toggleBtn = document.getElementById('toggleBtn')
+        const toggleText = document.getElementById('toggleText')
+        const formTitle = document.getElementById('formTitle')
+
+        toggleBtn.addEventListener('click', () => {
+            loginForm.classList.toggle('hidden')
+            signupForm.classList.toggle('hidden')
+
+            if (!loginForm.classList.contains('hidden')) {
+                formTitle.textContent = 'Login'
+                toggleText.textContent = 'Não tem conta? '
+                toggleBtn.textContent = 'Cadastre-se'
+            } else {
+                formTitle.textContent = 'Cadastro'
+                toggleText.textContent = 'Já tem conta? '
+                toggleBtn.textContent = 'Login'
+            }
+        })
+    </script>
+
+</body>
+
+</html>
