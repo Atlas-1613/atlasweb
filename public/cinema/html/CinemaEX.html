@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cinetec</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="CinemaEX.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- Cabeçalho -->
+  <div class="b-example-divider"></div>
+  <header class="p-3 text-bg-dark">
+    <div class="container">
+
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <img src="logo.png" id="imagem" class="img-fluid pe-5" alt="logo">
+        </a>
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="#" class="nav-link px-2 text-white">Home</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">Programação</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">Novidades</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">Snackbars</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+        </ul>
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+          <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..."
+            aria-label="Search" />
+        </form>
+        <div class="text-end">
+          <button type="button" class="btn btn-outline-light me-2">
+            Login
+          </button>
+          <button type="button" class="btn btn-danger">Sign-up</button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--carrosel de filmes-->
+  <div id="carouselExample" class="carousel slide">
+    <!--Identifica o carrossel e os botões usam esse ID para saber qual carrossel controlar,class="carousel slide" diz ao Bootstrap que isso é um carrossel e ativa a animação de deslizar entre as imagens-->
+    <div class="carousel-inner"> <!--guarda todos os itens do carrossel.-->
+      <div class="carousel-item active">
+        <!--define um item/slide, active indica qual imagem aparece primeiro quando a página carrega-->
+        <img src="carrossel\faça ela voltar horizontal.png" class="d-block w-100" alt="algo1">
+        <!--d-block transforma a imagem em block evitando espaços estranhos, w-100 faz a imagem ocupar 100% da largura do carrossel-->
+      </div>
+      <div class="carousel-item"> <!--só aparecem quando o usuário passa o carrossel pois não tem active-->
+        <img src="carrossel\ate a ultima gota.png" class="d-block w-100" alt="algo2">
+      </div>
+      <div class="carousel-item">
+        <img src="carrossel\a vingança de popeye horiz.png" class="d-block w-100" alt="algo3">
+      </div>
+      <div class="carousel-item">
+        <img src="carrossel\a meia irmã feia.png" class="d-block w-100" alt="algo4">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <!--carousel-control-next/prev estilo do botão anterior ou o próximo, data-bs-target="#carouselExample" diz qual carrossel controlar-->
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span><!--mostra o ícone-->
+      <span class="visually-hidden">Previous</span><!--para acessibilidade (leitores de tela)-->
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <!--data-bs-slide="next/prev" move para o slide anterior ou o próximo-->
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- Texto inicial -->
+  <div class="p-3 text-light fs-2">
+    <h1>Filmes Disponiveis:</h1>
+    <p>Assista e descubra os melhores filmes da temporada aqui!</p>
+  </div>
+  <!--cards de filme-->
+  <div class="container">
+    <div class="row ">
+      <div class="col-sm">
+        <div class="card text-light border-0 m-4" style="width: 18rem;">
+          <img src="filmes verticais\finaf 2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Five Nights At Freddy's 2</h5>
+            <p class="card-text">Filme-Terror</p>
+            <a href="#" class="btn btn-primary">Assista já</a>
+          </div>
+        </div>
+        <div class="card text-light border-0 m-4" style="width: 18rem;">
+          <img src="filmes verticais\ate a ultima gota.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Até a Última Gota</h5>
+            <p class="card-text">Filme-Drama</p>
+            <a href="#" class="btn btn-primary">Assista já</a>
+          </div>
+        </div>
+        <div class="card text-light border-0 m-4" style="width: 18rem;">
+          <img src="filmes verticais\the game of the viuva.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">O Jogo Da Viúva</h5>
+            <p class="card-text">Filme-Suspense</p>
+            <a href="#" class="btn btn-primary">Assista já</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg">
+        <div class="card text-light border-0 m-4" style="width: 18rem;">
+          <img src="filmes verticais\drop ameaça anonima.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Drop: Ameaça Anônima</h5>
+            <p class="card-text">Filme-Suspense</p>
+            <a href="#" class="btn btn-primary">Assista já</a>
+          </div>
+        </div>
+        <div class="card text-light border-0 m-4" style="width: 18rem;">
+          <img src="filmes verticais\faça ela voltar.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Faça Ela Voltar</h5>
+            <p class="card-text">Filme-Terror</p>
+            <a href="#" class="btn btn-primary">Assista já</a>
+          </div>
+        </div>
+        <div class="card text-light border-0 m-4" style="width: 18rem;">
+          <img src="filmes verticais\Anaconda vertc.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Anaconda</h5>
+            <p class="card-text">Filme-Comédia</p>
+            <a href="#" class="btn btn-primary">Assista já</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg">
+        <div class="card text-light border-0 m-4" style="width: 18rem;">
+          <img src="filmes verticais\a vingança de popeye.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">A Vingança de Popeye</h5>
+            <p class="card-text">Filme-Terror</p>
+            <a href="#" class="btn btn-primary">Assista já</a>
+          </div>
+        </div>
+        <div class="card text-light border-0 m-4" style="width: 18rem;">
+          <img src="filmes verticais\Telefone pretro 2.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Telefone Preto 2</h5>
+            <p class="card-text">Filme-Terror</p>
+            <a href="#" class="btn btn-primary">Assista já</a>
+          </div>
+        </div>
+        <div class="card text-light border-0 m-4" style="width: 18rem;">
+          <img src="filmes verticais\a meia irma feia.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">A Meia Irmã Feia</h5>
+            <p class="card-text">Filme-Terror</p>
+            <a href="#" class="btn btn-primary">Assista já</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

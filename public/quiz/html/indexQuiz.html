@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../IMG/quiz.png" type="image/x-icon">
+        <title>Quiz-PWI</title>
+        <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+        <div class="img">
+
+        </div>
+        <div class="animaisDisponiveis">
+                <h1 id="h1Animais">Animais disponíveis</h1>
+                <p class="animais">Leão, Cavalo, Homem, Macaco, Morcego, Baleia, Avestruz, Pinguim, Pato, Águia,
+                        Tartaruga,
+                        Crocodilo e Cobra.</p>
+        </div>
+
+        <div class="container">
+                <form id="quiz">
+                        <h1 class="umASeis">Progresso</h1>
+
+                        <div class="barra-progresso-container">
+                                <div class="barra-progresso" id="barraProgresso"></div>
+                        </div>
+
+                        <p>1 - Seu animal é mamífero?<br>
+                                <input class="resposta" type="radio" name="p1" value="Sim"> Sim
+                                <input class="resposta" type="radio" name="p1" value="Não"> Não
+                        </p>
+
+                        <p>2 - Seu animal é quadrúpede?<br>
+                                <input class="resposta" type="radio" name="p2" value="Sim"> Sim
+                                <input class="resposta" type="radio" name="p2" value="Não"> Não
+                        </p>
+
+                        <p>3 - Seu animal é carnívoro?<br>
+                                <input class="resposta" type="radio" name="p3" value="Sim"> Sim
+                                <input class="resposta" type="radio" name="p3" value="Não"> Não
+                        </p>
+
+                        <p>4 - Seu animal é herbívoro?<br>
+                                <input class="resposta" type="radio" name="p4" value="Sim"> Sim
+                                <input class="resposta" type="radio" name="p4" value="Não"> Não
+                        </p>
+
+                        <p>5 - Seu animal voa?<br>
+                                <input class="resposta" type="radio" name="p5" value="Sim"> Sim
+                                <input class="resposta" type="radio" name="p5" value="Não"> Não
+                        </p>
+
+                        <p>6 - Seu animal tem veneno?<br>
+                                <input class="resposta" type="radio" name="p6" value="Sim"> Sim
+                                <input class="resposta" type="radio" name="p6" value="Não"> Não
+                        </p>
+
+                        <p>
+                                <input type="reset" value="Limpar">
+                                <input type="submit" value="Enviar">
+                        </p>
+                </form>
+        </div>
+
+        <div id="resultadoModal" class="modal">
+                <div class="modal-content">
+                        <h1 id="nomeAnimal"></h1>
+                        <img id="fotoAnimal">
+                        <button id="btnVoltar">Voltar</button>
+                </div>
+        </div>
+
+        <script src="../JS/script.js"></script>
+</body>
+
+</html>

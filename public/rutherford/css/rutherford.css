@@ -1,0 +1,438 @@
+body {
+    margin: 0;
+    padding: 0;
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+    background-color: #e9e9e9;
+
+    .container {
+        margin: 0;
+        width: 86%;
+        max-width: 1350px;
+        margin: auto;
+        justify-content: center;
+        top: auto;
+        background-color: #ffffff;
+
+        nav {
+            background: linear-gradient(to right, #2e7d32, #43a047);
+            color: white;
+            width: 1228px;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 3;
+            padding: 0 40px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+
+
+            .links {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 40px;
+
+                a {
+                    color: #ffffff;
+                    text-decoration: none;
+                    font-size: 18px;
+                    position: relative;
+                    padding: 5px 10px;
+                    transition: color 0.3s ease;
+
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        width: 0%;
+                        height: 2px;
+                        background-color: #a5d6a7;
+                        transition: width 0.3s ease;
+                    }
+
+                    &:hover {
+                        color: #c8e6c9;
+
+                        &::after {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+        }
+
+
+        .secao-capa {
+            max-width: 100%;
+            height: 630px;
+            background-image: url(../IMG/23084167882082.jpg);
+            background-repeat: no-repeat;
+            position: relative;
+            background-size: cover;
+
+            .fundo-texto {
+                background-color: rgba(161, 161, 161, 0.551);
+                width: 100%;
+                height: 100%;
+            }
+
+            .div-texto-capa {
+                position: absolute;
+                left: 10%;
+                top: 25%;
+                width: 40%;
+                background-color: rgba(0, 0, 0, 0.4);
+                padding: 30px 40px;
+                border-radius: 15px;
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+                backdrop-filter: blur(6px);
+                color: #ffffff;
+
+                .titulo-capa {
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 800;
+                    font-size: 64px;
+                    line-height: 1.1;
+                    color: #a5d6a7;
+                    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+                    display: block;
+                    margin-bottom: 10px;
+                }
+
+                .texto-capa {
+                    font-family: 'Open Sans', sans-serif;
+                    width: 100%;
+                    font-size: 22px;
+                    line-height: 1.6;
+                    margin-top: 20px;
+                    color: #f1f1f1;
+                    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
+                    padding: 50px;
+                }
+
+            }
+        }
+
+        /* a:hover {
+        colo
+    } */
+        .secao-intro {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 100%;
+            height: 550px;
+            background-color: #ffffff;
+            padding: 0 50px;
+        }
+
+        .div-intro {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .div-intro .h1 {
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #146b27;
+        }
+
+        .div-intro .p {
+            font-size: 18px;
+            line-height: 1.8;
+            text-align: justify;
+            max-width: 610px;
+            color: #444;
+            margin-left: 100px;
+        }
+
+
+        /* .div-img-rutherford {
+        position: relative;
+    } */
+
+        .img-rutherford {
+            width: auto;
+            height: 300px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+            &:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 0 30px rgb(51, 254, 0);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+        }
+
+        .secao-formacao-academica {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 100%;
+            height: 550px;
+            background-color: #ffffff;
+            padding: 0 50px;
+        }
+
+        .div-formacao {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .div-formacao .h1-form {
+            margin-right: 103px;
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #146b27;
+        }
+
+        .div-formacao .p-form {
+            font-size: 18px;
+            line-height: 1.8;
+            text-align: justify;
+            max-width: 610px;
+            color: #444;
+        }
+
+
+
+        .img2 {
+            position: relative;
+        }
+
+        .univers {
+            width: auto;
+            height: 300px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+            &:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 0 30px rgb(51, 254, 0);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+        }
+
+        .secao-vida-cientifica {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 550px;
+            background-color: #ffffff;
+
+            .fundo-vida-cientifica {
+                height: 440px;
+                width: 750px;
+                background-color: white;
+                position: relative;
+                /* transform: translate(10px, -10px); */
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border: 15px solid rgb(0, 0, 0);
+                border-radius: 30px;
+                box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+
+                .div-titulo-vida {
+                    text-align: center;
+                }
+
+                .p-form {
+                    font-size: 18px;
+                    line-height: 1.8;
+                    text-align: justify;
+                    max-width: 610px;
+                    color: #444;
+                }
+
+                .h1-video {
+                    /* margin-right: 10px; */
+                    font-size: 36px;
+                    text-align: center;
+                    margin-bottom: 20px;
+                    color: #146b27;
+                    justify-content: top;
+                }
+            }
+        }
+
+
+        .secao-descoberta {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .div-atomo {
+                flex: 1;
+                margin-top: 118px;
+
+                .img-atomo {
+                    width: 430px;
+                    height: auto;
+                    border-radius: 15px;
+                    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+                    &:hover {
+                        transform: translateY(-5px);
+                        box-shadow: 0 0 30px rgb(51, 254, 0);
+                        transition: transform 0.3s ease, box-shadow 0.3s ease;
+                    }
+                }
+            }
+
+            .div-descoberta {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                width: 60%;
+
+                .p-form {
+                    font-size: 18px;
+                    line-height: 1.8;
+                    text-align: justify;
+                    max-width: 610px;
+                    color: #444;
+                }
+
+                .h1-form {
+                    font-size: 36px;
+                    text-align: center;
+                    margin-bottom: 20px;
+                    color: #146b27;
+                    padding: 10px;
+                }
+            }
+        }
+
+        .secao-reconhecimento {
+
+            padding: 60px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #f0f0f0;
+
+            .div-reconhecimento {
+                max-width: 800px;
+                background-color: #121212;
+                padding: 40px;
+                border-radius: 12px;
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+                &:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 0 30px rgba(9, 255, 0, 0.88);
+                }
+
+                h2 {
+                    font-size: 28px;
+                    margin-bottom: 20px;
+                    color: #cfcfcf;
+                    border-left: 5px solid #444;
+                    padding-left: 15px;
+                }
+
+                p {
+                    font-size: 18px;
+                    line-height: 1.7;
+                    color: #d0d0d0;
+                }
+            }
+        }
+    }
+
+    .secao-homenagens {
+        padding: 60px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #f0f0f0;
+
+        .div-homenagens {
+            max-width: 800px;
+            background: linear-gradient(to right, #1e1a1a, #2b2b2b);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+            &:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 0 30px rgb(51, 254, 0);
+            }
+
+            .h11 {
+                font-size: 28px;
+                margin-bottom: 20px;
+                color: #cfcfcf;
+                border-left: 5px solid #444;
+                padding-left: 15px;
+            }
+
+            .pp {
+                font-size: 18px;
+                line-height: 1.7;
+                color: #d0d0d0;
+            }
+        }
+    }
+
+    .secao-video {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffff;
+        padding: 60px 20px;
+    }
+
+    .box-video {
+        background-color: #f5f5f5;
+        padding: 40px;
+        border-radius: 20px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+        max-width: 800px;
+        width: 100%;
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .box-video:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0 30px rgb(51, 254, 0);
+    }
+
+    .titulo-video {
+        font-size: 32px;
+        margin-bottom: 25px;
+        color: #146b27;
+        font-family: 'Poppins', sans-serif;
+        text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .box-video video {
+        width: 100%;
+        max-height: 500px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+
+}
