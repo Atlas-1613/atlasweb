@@ -35,3 +35,9 @@ Criar branch:
 ```
 git chekout -b <nome da branch>
 ```
+
+Para salvar as credenciais:
+```
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name" 
+```
